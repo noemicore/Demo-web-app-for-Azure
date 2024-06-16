@@ -1,18 +1,18 @@
 <?php
 session_start();
 
-// Hủy tất cả các session variables
+// Cancel all session variables
 $_SESSION = array();
 
-// Nếu có session cookie, hủy nó bằng cách đặt hết hạn cho nó
+// If there is a session cookie, cancel it by setting it to expire
 if (isset($_COOKIE[session_name()])) {
     setcookie(session_name(), '', time() - 86400, '/');
 }
 
-// Hủy session
+// Canceling a session
 session_destroy();
 
-// Chuyển hướng người dùng về trang đăng nhập
+// Redirect users to the login page
 header("Location: login.html");
 exit();
 ?>
@@ -22,11 +22,11 @@ exit();
 <?php
                   // session_start();
 
-                  // // Hủy tất cả biến session
+                  // // Cancel all session variables
                   // $_SESSION = array();
 
-                  // // Nếu bạn muốn hủy hoàn toàn session, bạn cũng phải xóa session cookie.
-                  // // Lưu ý: Điều này sẽ hủy session, không chỉ dữ liệu session!
+                  // // If you want to cancel the session entirely, you must also delete the session cookie.
+                  // // Note: This will cancel the session, not just the session data!
                   // if (ini_get("session.use_cookies")) {
                   //     $params = session_get_cookie_params();
                   //     setcookie(session_name(), '', time() - 42000,
@@ -35,10 +35,10 @@ exit();
                   //     );
                   // }
 
-                  // // Cuối cùng, hủy session
+                  // // Finally, cancel the session
                   // session_destroy();
 
-                  // // Chuyển hướng người dùng về trang đăng nhập
+                  // // Redirect users to the login page
                   // header("Location: login.html");
                   // exit;
                   ?>
