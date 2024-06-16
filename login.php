@@ -3,8 +3,8 @@
 
 
     $host = "dbutt.mysql.database.azure.com";
-    $username = "baoanhhihi";
-    $password = "Vuchien@123";
+    $username = "administrador";
+    $password = "LN123456*";
     $database = "utt";
 
 
