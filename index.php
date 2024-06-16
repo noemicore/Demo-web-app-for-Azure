@@ -61,12 +61,7 @@ ini_set('display_errors', '0');
       <div class="header__system">
         <a href="" class="header__system__link">Home page</a>
         <a href="logout.php" class="header__system__link">Log off</a>
-        <a href="" class="header__system__link">Frequently Asked Questions</a>
         <a href="" class="header__system__link">Help</a>
-        <select class="header__system__link-op" name="Product_Type">
-          <option value="">VN</option>
-          <option value="">EN</option>
-        </select>
       </div>
     </div>
 
