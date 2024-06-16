@@ -97,13 +97,6 @@ ini_set('display_errors', '0');
             <div class="container__information--title">Industry:</div>
             <div class="container__information--specialized"><?php echo $row['Specialized'] ?></div>
           </div>
-          <div class="container__information--row">
-            <div class="container__information--title">Filter:</div>
-            <select class="container__information--semester" name="Product_Type">
-              <option value="">View graded modules</option>
-              <option value="">EN</option>
-            </select>
-          </div>
         </div>
 
         <div class="container__information--col">

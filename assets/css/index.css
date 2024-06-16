@@ -41,13 +41,19 @@ html {
 
 .header__system {
     background-color: #56a4fe;
+    text-align: center;
     width: 25%;
-    height: 30px;
+    height: 50px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    margin-top: 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     float: right;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
+
 
 .header__system__link {
     padding-top: 5px;
