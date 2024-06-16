@@ -12,7 +12,7 @@
     $database = "utt";
 
 
-    //tao ket noi
+    // Make a connection
     $conn = new mysqli($host, $username, $password, $database);
     // Kiểm tra kết nối
     if ($conn->connect_error) {
@@ -216,22 +216,22 @@ ini_set('display_errors', '0');
                   <br>
 
                   <?php
-                  // Chuẩn bị câu lệnh SQL
+                  // SQL Statement Preparation
                   $stmt = $conn->prepare("SELECT * FROM `2022-2023_2` WHERE id = ?");
 
-                  // Gán giá trị cho tham số
+                  // Assigning a value to a parameter
                   $id = $_SESSION['id'];
 
-                  // Ràng buộc tham số
+                  // Parameter Constraints
                   $stmt->bind_param("s", $id);
 
-                  // Thực thi câu lệnh
+                  // Command Execution
                   $stmt->execute();
 
-                  // Lấy kết quả
+                  // Get Results
                   $result = $stmt->get_result();
 
-                  // Đếm số bản ghi
+                  // Counting records
                   $tong_bg = $result->num_rows;
 
                   $stt = 0;
