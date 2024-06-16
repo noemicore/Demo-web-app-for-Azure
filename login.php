@@ -8,7 +8,7 @@
     $database = "utt";
 
 
-    //tao ket noi
+    // Make a connection
     $conn = new mysqli($host, $username, $password, $database);
     // Kiểm tra kết nối
     if ($conn->connect_error) {
@@ -21,7 +21,7 @@
     $User = $_POST["User"];
     $Password = $_POST["Password"];
 
-    //trich xuat du lieu nhap bang ham 
+    // Extract input data with a function
     $Input_user = mysqli_real_escape_string($conn, $User);
     $Input_pass = mysqli_real_escape_string($conn, $Password);
 
@@ -30,7 +30,7 @@
 
     $result = mysqli_query($conn, $sql);
 
-    // tắt hiển thị lỗi
+    // Disable Error Display
     ini_set('display_errors', '0');
 
     $count = mysqli_num_rows($result);
@@ -46,19 +46,19 @@
 ?>
 
  <?php
-    // // lay dulieu tu form dangnhap
+    // // Get data from the login form
     // $User = $_POST["User"];
     // $Password = $_POST["Password"];
 
-    // //tao ket noi
+    // // Make a connection
     // $conn = mysqli_connect("localhost","root","") or die ;
-    // //tim csdl de lam viec
+    // // Find a database to work with
     // mysqli_select_db($conn,"utt") or die;
-    // // cau lenh query
+    // // query statement
     // echo $sql_insert_account ="SELECT * FROM `account` WHERE User = '$User' and Password = '$Password'";
 
     // ini_set('display_errors', '0');
-    // //thuc hien truy van
+    // // Make a query
     // $result = mysqli_query($conn, $sql_insert_account);
     // $count = mysqli_num_rows($result);
 
@@ -73,16 +73,16 @@
 
 
 <?php 
-//     //lọc tên người dùng và mật khẩu để loại bỏ các ký tự đặc biệt.
+//     // Filter usernames and passwords to remove special characters.
 //     $User = filter_input(INPUT_POST, 'User', FILTER_SANITIZE_STRING);
 //     $Password = filter_input(INPUT_POST, 'Password', FILTER_SANITIZE_STRING);
 
-//     //tao ket noi
+//     // Make a connection
 //     $conn = mysqli_connect("localhost","root","") or die ;
-//     //tim csdl de lam viec
+//     // Find a database to work with
 //     mysqli_select_db($conn,"utt") or die;
 
-//     //làm sạch tên người dùng và mật khẩu trước khi chúng được sử dụng trong truy vấn SQL
+//     // Clean usernames and passwords before they are used in SQL queries
 //    $User = mysqli_real_escape_string($conn, $User);
 //    echo  $User;
 //    $Password = mysqli_real_escape_string($conn, $Password);
@@ -93,7 +93,7 @@
 //     ini_set('display_errors', '0');
 
 
-//     //thuc hien truy van
+//     // Make a query
 //     $result = mysqli_query($conn, $sql_insert_account);
 //     $count = mysqli_num_rows($result);
 
