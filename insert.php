@@ -1,7 +1,7 @@
 <?php
 $host = 'dbutt.mysql.database.azure.com';
-$username = 'baoanhhihi';
-$password = 'Vuchien@123';
+$username = 'administrador';
+$password = 'LN123456*';
 $db_name = 'utt';
 
 //Establishes the connection
