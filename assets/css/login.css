@@ -1,9 +1,6 @@
 html {
     font-family: monospace;
 }
-.wraper {}
-
-.header {}
 
 .header__title {
     background-color: #56a4fe;
@@ -57,8 +54,6 @@ html {
     text-decoration-line: none;
     color: #fff !important;
 }
-
-.container {}
 
 .container__center {
     box-shadow: 0 0 0 3px orange;
