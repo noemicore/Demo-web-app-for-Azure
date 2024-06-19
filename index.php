@@ -96,7 +96,7 @@ ini_set('display_errors', '0');
           </div>
 
           <div class="container__information--row">
-            <div class="container__information--title">Industry:</div>
+            <div class="container__information--title">Industria:</div>
             <div class="container__information--specialized"><?php echo $row['Specialized'] ?></div>
           </div>
 
