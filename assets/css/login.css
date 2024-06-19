@@ -1,3 +1,11 @@
+:root {
+    --primary-bg-color: #110c06;
+    --text-color: #e0d9c8;
+    --btn-bg-color: #252523;
+    --input-border-color: #0f090928;
+    --box-shadow-color-btn: rgba(0, 0, 0, 0.2);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,66 +14,93 @@
 
 html {
     font-family: monospace;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.header {
+    background-color: var(--primary-bg-color);
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
 }
 
 .header__title {
-    background-color: #56a4fe;
-    height: 85px;
-    position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .header__title__description {
+    display: flex;
     align-items: center;
-    padding-top: auto;
-    padding-bottom: auto;
-    top: 31px;
-    padding-left: 20px;
-    position: absolute;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 600;
+    color: var(--text-color);
+}
+
+.header__title__description img {
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
 }
 
 .header__title__user {
-    /* float: right; */
-    position: absolute;
-    width: 200px;
-    height: 35px;
-    right: 0;
-    font-size: 12px;
-    border-bottom-left-radius: 75px;
-    background-color: White;
+    display: flex;
+    align-items: center;
+    background-color: var(--primary-bg-color);
+    padding: 5px 15px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px var(--input-border-color);
 }
 
-.header__title__user>h3 {
-    float: right;
+.header__title__user h3 {
     margin: 0;
-    font-size: 12px;
-    color: #56a4fe;
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+.container {
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
 }
 
 .container__center {
-    padding: 40px 0 40px 0;
-    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.356);
+    padding: 40px 20px;
+    box-shadow: 0 0 10px 4px var(--input-border-color);
     border-radius: 8px;
-    margin-top: 150px;
-    margin-left: auto;
-    margin-right: auto;
     width: 35%;
+    text-align: center;
+    background-color: var(--form-bg-color);
 }
 
 .container__center__title {
-    text-align: center;
-    font-size: 20px;
-    color: #215da1;
+    font-size: 24px;
+    color: var(--btn-bg-color);
+    margin-bottom: 20px;
 }
 
 .container__center__description {
-    padding: 10px 10px;
     display: flex;
-    width: 70%;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
 }
 
 .container__center__description--text {
@@ -75,20 +110,11 @@ html {
 
 .container__center__description--input {
     flex: 1;
-}
-
-.container__center__btn {
-    display: block;
-    margin: 10px auto;
-}
-
-.container__center__description--input {
     padding: 8px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--input-border-color);
     border-radius: 4px;
-    width: calc(100% - 80px);
     margin-left: 10px;
-    box-sizing: border-box;
+    background-color: var(--form-bg-color);
 }
 
 .container__center__btn {
@@ -96,25 +122,27 @@ html {
     width: 50%;
     margin: 20px auto;
     padding: 10px;
-    background-color: #215da1;
-    color: #fff;
+    background-color: var(--primary-bg-color);
+    color: var(--text-color);
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px var(--box-shadow-color-btn);
 }
 
 .container__center__btn:hover {
-    background-color: #1a478b;
+    background-color: var(--btn-bg-color);
 }
 
 .footer {
-    margin-top: 200px;
     height: 50px;
-    background-color: #56a4fe;
+    background-color: var(--primary-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer__description {
-    padding: 15px;
-    color: #fff;
+    background-color: var(--primary-bg-color);
+    color: var(--text-color);
 }
