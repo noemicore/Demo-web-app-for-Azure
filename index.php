@@ -77,12 +77,12 @@ ini_set('display_errors', '0');
         <div class="container__information--col">
 
           <div class="container__information--row">
-            <div class="container__information--title">Student Code:</div>
+            <div class="container__information--title">Code - Usuario:</div>
             <div class="container__information--id"><?php echo $row['Student_id'] ?></div>
           </div>
 
           <div class="container__information--row">
-            <div class="container__information--title">Faculty: </div>
+            <div class="container__information--title">Permiso: </div>
             <div class="container__information--department"><?php echo $row['Department'] ?></div>
           </div>
 
@@ -91,7 +91,7 @@ ini_set('display_errors', '0');
         <div class="container__information--col">
 
           <div class="container__information--row">
-            <div class="container__information--title">Full name:</div>
+            <div class="container__information--title">Nombre completo:</div>
             <div class="container__information--name"><?php echo $row['Name'] ?></div>
           </div>
 
@@ -105,12 +105,12 @@ ini_set('display_errors', '0');
         <div class="container__information--col">
 
           <div class="container__information--row">
-            <div class="container__information--title">Condition:</div>
-            <div class="container__information--status">Studying</div>
+            <div class="container__information--title">Lista:</div>
+            <div class="container__information--status">Mis pelis</div>
           </div>
 
           <div class="container__information--row">
-            <div class="container__information--title">Class: </div>
+            <div class="container__information--title">Tipo: </div>
             <div class="container__information--class"><?php echo $row['Class'] ?></div>
           </div>
 
