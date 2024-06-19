@@ -5,118 +5,135 @@
 }
 
 html {
-    font-family: Arial,Helvetica,sans-serif;
+    font-family: monospace;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.header {
+    background-color: #110c06;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
 }
 
 .header__title {
-    background-color: #56a4fe;
-    height: 85px;
-    position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .header__title__description {
+    display: flex;
     align-items: center;
-    padding-top: auto;
-    padding-bottom: auto;
-    top: 31px;
-    padding-left: 20px;
-    position: absolute;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 600;
+    color: #e0d9c8;
+}
+
+.header__title__description img {
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
 }
 
 .header__title__user {
-    /* float: right; */
-    position: absolute;
-    width: 400px;
-    height: 35px;
-    right: 0;
-    font-size: 12px;
-    border-bottom-left-radius: 75px;
-    background-color: White;
-}
-
-.header__title__user>h3 {
-    float: right;
-    padding: 10px;
-    margin: 0;
-    font-size: 12px;
-    color: blue;
-}
-
-.header__system {
-    background-color: #56a4fe;
-    text-align: center;
-    width: 25%;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    margin-bottom: 10px;
-    float: right;
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    background-color: #110c06;
+    padding: 5px 15px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(15, 9, 8, 0.66);
 }
 
-
-.header__system__link {
-    padding-top: 5px;
-    padding: 5px;
-    text-decoration-line: none;
-    color: #fff !important;
+.header__title__user h3 {
+    margin: 0;
+    font-size: 14px;
+    color: #e0d9c8;
 }
 
-.container__information{
-    margin-top: 50px;
+.container {
+    margin-top: 10%;
     display: flex;
-    margin-left: 10%;
-    margin-right: 10%;
-    font-size: 16px;
-    line-height: 1.8;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
 }
 
-.container__information--col{
-    padding-right: 40px;
+.container__center {
+    padding: 40px 20px;
+    box-shadow: 0 0 10px 4px rgba(15, 9, 8, 0.66);
+    border-radius: 8px;
+    width: 35%;
+    text-align: center;
+    background-color: #fff;
 }
 
-.container__information--row{
+.container__center__title {
+    font-size: 24px;
+    color: #252523;
+    margin-bottom: 20px;
+}
+
+.container__center__description {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
 }
 
-.container__information--title{
-    width: 200px;
-    color: green;
+.container__center__description--text {
+    width: 80px;
     font-weight: 600;
 }
 
-.container__information--semester{
-    width: 150px;
+.container__center__description--input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid rgba(15, 9, 8, 0.66);
+    border-radius: 4px;
+    margin-left: 10px;
+    background-color: #fff;
 }
 
-.container__scores{
-    margin: 30px 0;
-    font-size: 14px;
-    border-width: 1px;
+.container__center__btn {
+    display: block;
+    width: 50%;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #110c06;
+    color: #e0d9c8;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.container__scores__header{
-    background-color: #2467ae;
-    text-align: center;
-    height: 30px;
-    color: #fff;
-
+.container__center__btn:hover {
+    background-color: #252523;
 }
 
-.container__scores__row{
-    text-align: center;
-}
-
-.footer{
-    margin-top: 200px;
+.footer {
     height: 50px;
-    background-color: #56a4fe;
+    background-color: #110c06;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.footer__description{
-    padding: 15px;
-    color: #fff;
+.footer__description {
+    color: #e0d9c8;
 }
