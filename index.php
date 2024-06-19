@@ -50,18 +50,16 @@ ini_set('display_errors', '0');
     <div class="header">
       <div class="header__title">
         <div class="header__title__description" style="color: #fff;">
-          TRUONG UNIVERSITY OF TRANSPORT TECHNOLOGY
+          <img src="assets/img/moon.png" alt="Icono de luna">
+          <h1>MoviMoon</h1>
         </div>
-
         <div class="header__title__user">
           <h3>Student: <?php echo $row['Name'] ?></h3>
         </div>
-
       </div>
       <div class="header__system">
         <a href="" class="header__system__link">Home page</a>
         <a href="logout.php" class="header__system__link">Log off</a>
-        <a href="" class="header__system__link">Help</a>
       </div>
     </div>
 
