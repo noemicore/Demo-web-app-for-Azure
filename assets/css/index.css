@@ -5,7 +5,7 @@
 }
 
 html {
-    font-family: Arial,Helvetica,sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .header__title {
@@ -48,7 +48,7 @@ html {
     display: flex;
     align-items: center;
     padding: 5px 15px;
-    border-radius: 0 0 15px 0;
+    border-radius: 0 0 0 15px;
     box-shadow: 0 0 10px rgba(15, 9, 8, 0.66);
 }
 
@@ -73,7 +73,6 @@ html {
     align-items: center;
 }
 
-
 .header__system__link {
     padding-top: 5px;
     padding: 5px;
@@ -81,7 +80,7 @@ html {
     color: #fff !important;
 }
 
-.container__information{
+.container__information {
     margin-top: 50px;
     display: flex;
     margin-left: 10%;
@@ -90,49 +89,50 @@ html {
     line-height: 1.8;
 }
 
-.container__information--col{
+.container__information--col {
     padding-right: 40px;
 }
 
-.container__information--row{
+.container__information--row {
     display: flex;
 }
 
-.container__information--title{
+.container__information--title {
     width: 200px;
-    color: green;
+    color: rgb(121, 92, 0);
     font-weight: 600;
 }
 
-.container__information--semester{
+.container__information--semester {
     width: 150px;
 }
 
-.container__scores{
+.container__scores table {
+    margin: 0 auto;
+    width: 80%;
+    border-collapse: separate;
+    border: 2px solid #929292;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(48, 48, 48, 0.534);
+}
+
+.container__scores {
+    text-align: center;
     margin: 30px 0;
     font-size: 14px;
     border-width: 1px;
 }
 
-.container__scores__header{
-    background-color: #2467ae;
+.container__scores__header {
+    background-color: #f0b800;
     text-align: center;
     height: 30px;
-    color: #fff;
-
+    color: #161414;
+    font-size: larger;
+    font-weight: 700;
 }
 
-.container__scores__row{
+.container__scores__row {
     text-align: center;
-}
-
-.footer{
-    margin-top: 200px;
-    height: 50px;
-    background-color: #56a4fe;
-}
-
-.footer__description{
-    padding: 15px;
-    color: #fff;
 }
