@@ -198,14 +198,6 @@ ini_set('display_errors', '0');
       
     </div>
 
-    <div class="footer">
-
-      <div class="footer__description">
-        Hotline: 02435528978
-      </div>
-
-    </div>
-
   </div>
 </body>
 </html>
