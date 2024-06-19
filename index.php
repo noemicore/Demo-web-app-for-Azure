@@ -123,59 +123,44 @@ ini_set('display_errors', '0');
         <table width="100%" align="center" border="1" style="border-collapse: collapse;">
           <tbody>
             <tr>
-              <td class="container__scores__header">Academic Year</td>
-              <td class="container__scores__header">Semester</td>
-              <td class="container__scores__header">Cumulative GPA System 10 N1</td>
-              <td class="container__scores__header">Cumulative GPA System 4 N1</td>
-              <td class="container__scores__header">Accumulated Credits N1</td>
-              <td class="container__scores__header">Semester GPA System 10 N1</td>
-              <td class="container__scores__header">Semester GPA System 4 N1</td>
-              <td class="container__scores__header">Credits N1</td>
+              <td class="container__scores__header">Genero</td>
+              <td class="container__scores__header">Titulo </td>
+              <td class="container__scores__header">Titulo original</td>
+              <td class="container__scores__header">Año</td>
+              <td class="container__scores__header">Puntuación</td>
             </tr>
             <tr>
-              <td class="container__scores__row">2021_2022</td>
-              <td class="container__scores__row">1</td>
-              <td class="container__scores__row">8.53</td>
-              <td class="container__scores__row">3.66</td>
-              <td class="container__scores__row">16</td>
-              <td class="container__scores__row">8.53</td>
-              <td class="container__scores__row">3.66</td>
-              <td class="container__scores__row">16</td>
+              <td class="container__scores__row">Comedia</td>
+              <td class="container__scores__row">Un pez llamando Wanda</td>
+              <td class="container__scores__row">A fish called Wanda</td>
+              <td class="container__scores__row">1988</td>
+              <td class="container__scores__row">⭐⭐⭐⭐</td>
             </tr>
             <tr>
-              <td class="container__scores__row">2021_2022</td>
-              <td class="container__scores__row">2</td>
-              <td class="container__scores__row">8.53</td>
-              <td class="container__scores__row">3.66</td>
-              <td class="container__scores__row">16</td>
-              <td class="container__scores__row">8.53</td>
-              <td class="container__scores__row">3.66</td>
-              <td class="container__scores__row">16</td>
+              <td class="container__scores__row">Catastrofico</td>
+              <td class="container__scores__row">Aeropuerto</td>
+              <td class="container__scores__row">Airport</td>
+              <td class="container__scores__row">1970</td>
+              <td class="container__scores__row">⭐⭐⭐⭐⭐</td>
             </tr>
             <tr>
-              <td class="container__scores__row">2021_2022</td>
-              <td class="container__scores__row">All Year</td>
-              <td class="container__scores__row">8.53</td>
-              <td class="container__scores__row">3.66</td>
-              <td class="container__scores__row">16</td>
-              <td class="container__scores__row">8.53</td>
-              <td class="container__scores__row">3.66</td>
-              <td class="container__scores__row">16</td>
+              <td class="container__scores__row">Animadas</td>
+              <td class="container__scores__row">Alicia en el pais de las maravillas</td>
+              <td class="container__scores__row">Alice in Worderland</td>
+              <td class="container__scores__row">1951</td>
+              <td class="container__scores__row">⭐⭐⭐⭐⭐</td>
             </tr>
             <tr>
-              <td class="container__scores__row"></td>
-              <td class="container__scores__row">Entire Course</td>
-              <td class="container__scores__row">8.53</td>
-              <td class="container__scores__row">3.66</td>
-              <td class="container__scores__row">16</td>
-              <td class="container__scores__row">8.53</td>
-              <td class="container__scores__row">3.66</td>
-              <td class="container__scores__row">16</td>
+              <td class="container__scores__row">Ciencia ficción</td>
+              <td class="container__scores__row">Regreso al futuro</td>
+              <td class="container__scores__row">Back to the future</td>
+              <td class="container__scores__row">1985</td>
+              <td class="container__scores__row">⭐⭐⭐</td>
             </tr>
             <tr>
           </tbody>
         </table>
-        
+
         <?php
         // SQL Statement Preparation
         $stmt = $conn->prepare("SELECT * FROM `2022-2023_2` WHERE id = ?");
