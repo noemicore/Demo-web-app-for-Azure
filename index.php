@@ -58,7 +58,7 @@ ini_set('display_errors', '0');
         </div>
 
         <div class="header__title__user">
-          <h3>Student: <?php echo $row['Name'] ?></h3>
+          <h3>Usuario: <?php echo $row['Name'] ?></h3>
         </div>
 
       </div>
